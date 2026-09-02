@@ -1,0 +1,501 @@
+student_id,subject,exam_score,attendance_pct
+101,Linear Algebra,60.4,68.5
+101,Calculus,66.2,74.8
+101,Python Programming,52.4,69.1
+101,Data Structures,61.7,65.6
+101,Statistics,65.0,63.8
+102,Linear Algebra,67.8,73.1
+102,Calculus,71.2,84.8
+102,Python Programming,67.1,68.2
+102,Data Structures,76.5,91.0
+102,Statistics,70.4,82.6
+103,Linear Algebra,71.9,71.3
+103,Calculus,71.3,74.6
+103,Python Programming,75.7,71.3
+103,Data Structures,63.8,86.1
+103,Statistics,64.2,79.7
+104,Linear Algebra,74.7,77.2
+104,Calculus,,70.1
+104,Python Programming,79.5,76.5
+104,Data Structures,72.5,86.2
+104,Statistics,59.9,71.8
+105,Linear Algebra,85.7,83.5
+105,Calculus,77.8,92.9
+105,Python Programming,90.8,
+105,Data Structures,80.7,94.6
+105,Statistics,88.7,80.1
+106,Linear Algebra,49.9,78.7
+106,Calculus,50.2,83.8
+106,Python Programming,56.4,69.0
+106,Data Structures,64.8,79.9
+106,Statistics,60.5,80.0
+107,Linear Algebra,59.9,81.5
+107,Calculus,55.9,70.0
+107,Python Programming,50.5,78.8
+107,Data Structures,62.8,64.2
+107,Statistics,52.8,59.0
+108,Linear Algebra,77.4,96.5
+108,Calculus,,84.0
+108,Python Programming,74.8,94.7
+108,Data Structures,86.9,92.9
+108,Statistics,75.0,82.7
+109,Linear Algebra,76.8,83.4
+109,Calculus,80.1,79.9
+109,Python Programming,70.2,74.9
+109,Data Structures,75.9,90.3
+109,Statistics,74.9,89.4
+110,Linear Algebra,48.6,59.3
+110,Calculus,46.6,57.2
+110,Python Programming,62.5,70.1
+110,Data Structures,60.3,68.6
+110,Statistics,52.4,67.4
+111,Linear Algebra,97.9,92.9
+111,Calculus,,96.6
+111,Python Programming,90.3,88.7
+111,Data Structures,94.3,96.0
+111,Statistics,89.5,92.3
+112,Linear Algebra,68.1,67.8
+112,Calculus,63.1,83.2
+112,Python Programming,61.5,64.2
+112,Data Structures,48.3,71.3
+112,Statistics,52.9,77.4
+113,Linear Algebra,81.6,96.0
+113,Calculus,81.1,96.2
+113,Python Programming,80.8,95.6
+113,Data Structures,71.2,81.2
+113,Statistics,73.6,76.8
+114,Linear Algebra,80.1,81.3
+114,Calculus,62.0,79.7
+114,Python Programming,63.1,92.4
+114,Data Structures,80.3,93.3
+114,Statistics,62.0,87.5
+115,Linear Algebra,96.5,85.2
+115,Calculus,88.0,83.0
+115,Python Programming,91.6,100.0
+115,Data Structures,83.9,100.0
+115,Statistics,87.3,88.4
+116,Linear Algebra,66.7,79.9
+116,Calculus,69.5,77.4
+116,Python Programming,73.7,82.5
+116,Data Structures,69.6,89.8
+116,Statistics,61.0,90.9
+117,Linear Algebra,73.0,88.4
+117,Calculus,89.7,97.1
+117,Python Programming,86.5,87.1
+117,Data Structures,75.3,95.2
+117,Statistics,80.8,84.4
+118,Linear Algebra,64.7,80.4
+118,Calculus,55.5,82.1
+118,Python Programming,52.8,66.9
+118,Data Structures,57.0,63.3
+118,Statistics,58.2,72.7
+119,Linear Algebra,63.7,85.1
+119,Calculus,75.4,69.4
+119,Python Programming,76.1,77.7
+119,Data Structures,,80.3
+119,Statistics,71.7,89.3
+120,Linear Algebra,95.3,96.3
+120,Calculus,97.9,89.1
+120,Python Programming,91.6,100.0
+120,Data Structures,100.0,100.0
+120,Statistics,99.2,
+121,Linear Algebra,75.6,93.3
+121,Calculus,89.2,88.6
+121,Python Programming,91.7,88.8
+121,Data Structures,75.1,97.3
+121,Statistics,77.1,90.9
+122,Linear Algebra,70.6,75.2
+122,Calculus,72.0,95.3
+122,Python Programming,,79.5
+122,Data Structures,85.2,89.6
+122,Statistics,74.1,87.5
+123,Linear Algebra,57.0,83.3
+123,Calculus,61.7,68.7
+123,Python Programming,71.9,70.1
+123,Data Structures,57.5,76.6
+123,Statistics,53.0,77.6
+124,Linear Algebra,79.7,97.2
+124,Calculus,86.7,92.9
+124,Python Programming,87.2,98.1
+124,Data Structures,86.9,85.4
+124,Statistics,88.6,80.2
+125,Linear Algebra,51.6,63.5
+125,Calculus,58.7,82.2
+125,Python Programming,64.5,71.9
+125,Data Structures,54.8,63.1
+125,Statistics,67.4,80.9
+126,Linear Algebra,100.0,100.0
+126,Calculus,81.5,95.8
+126,Python Programming,94.7,97.0
+126,Data Structures,,88.6
+126,Statistics,92.5,100.0
+127,Linear Algebra,74.0,88.6
+127,Calculus,60.3,89.5
+127,Python Programming,59.4,88.0
+127,Data Structures,70.9,84.6
+127,Statistics,72.3,70.5
+128,Linear Algebra,65.1,
+128,Calculus,62.7,75.9
+128,Python Programming,57.3,81.7
+128,Data Structures,62.5,74.8
+128,Statistics,72.3,76.2
+129,Linear Algebra,63.5,63.2
+129,Calculus,,76.2
+129,Python Programming,55.7,67.9
+129,Data Structures,,84.3
+129,Statistics,54.5,65.8
+130,Linear Algebra,,78.0
+130,Calculus,77.9,85.2
+130,Python Programming,88.0,90.0
+130,Data Structures,88.7,89.7
+130,Statistics,92.0,78.4
+131,Linear Algebra,80.5,86.3
+131,Calculus,79.6,84.9
+131,Python Programming,88.2,77.1
+131,Data Structures,71.4,81.9
+131,Statistics,76.5,99.2
+132,Linear Algebra,91.4,84.0
+132,Calculus,92.3,100.0
+132,Python Programming,88.3,87.1
+132,Data Structures,87.6,83.9
+132,Statistics,86.8,85.3
+133,Linear Algebra,75.2,69.7
+133,Calculus,74.8,80.9
+133,Python Programming,65.2,70.4
+133,Data Structures,73.6,88.3
+133,Statistics,70.6,75.9
+134,Linear Algebra,65.1,68.4
+134,Calculus,59.4,81.3
+134,Python Programming,68.9,86.4
+134,Data Structures,64.9,63.6
+134,Statistics,57.3,67.3
+135,Linear Algebra,72.2,72.3
+135,Calculus,73.4,
+135,Python Programming,80.3,77.3
+135,Data Structures,72.8,89.5
+135,Statistics,67.1,73.4
+136,Linear Algebra,85.7,83.3
+136,Calculus,81.1,83.4
+136,Python Programming,80.8,83.6
+136,Data Structures,85.6,77.9
+136,Statistics,72.4,84.0
+137,Linear Algebra,,89.2
+137,Calculus,82.4,90.4
+137,Python Programming,,100.0
+137,Data Structures,79.7,81.7
+137,Statistics,90.4,95.1
+138,Linear Algebra,72.8,76.1
+138,Calculus,82.8,95.6
+138,Python Programming,87.4,81.4
+138,Data Structures,78.4,83.0
+138,Statistics,73.8,87.9
+139,Linear Algebra,84.4,81.1
+139,Calculus,82.6,78.4
+139,Python Programming,78.3,91.0
+139,Data Structures,81.8,84.6
+139,Statistics,75.3,94.9
+140,Linear Algebra,57.7,79.1
+140,Calculus,46.5,69.0
+140,Python Programming,46.3,70.5
+140,Data Structures,,78.3
+140,Statistics,62.3,73.1
+141,Linear Algebra,72.5,88.5
+141,Calculus,77.7,85.1
+141,Python Programming,64.5,70.9
+141,Data Structures,68.3,86.6
+141,Statistics,66.4,80.0
+142,Linear Algebra,76.3,86.3
+142,Calculus,79.9,91.7
+142,Python Programming,74.4,79.7
+142,Data Structures,87.6,93.2
+142,Statistics,79.8,91.4
+143,Linear Algebra,83.9,88.3
+143,Calculus,83.3,79.0
+143,Python Programming,80.8,87.6
+143,Data Structures,78.2,84.2
+143,Statistics,71.8,80.3
+144,Linear Algebra,80.4,81.1
+144,Calculus,63.0,89.7
+144,Python Programming,,90.7
+144,Data Structures,76.8,72.6
+144,Statistics,78.1,88.0
+145,Linear Algebra,78.4,84.9
+145,Calculus,78.5,81.8
+145,Python Programming,80.3,82.4
+145,Data Structures,86.3,83.8
+145,Statistics,78.8,81.8
+146,Linear Algebra,67.6,80.1
+146,Calculus,53.3,75.8
+146,Python Programming,50.3,80.8
+146,Data Structures,63.5,67.0
+146,Statistics,57.0,83.2
+147,Linear Algebra,,83.1
+147,Calculus,85.3,
+147,Python Programming,99.2,100.0
+147,Data Structures,83.4,89.4
+147,Statistics,83.4,
+148,Linear Algebra,54.2,69.6
+148,Calculus,67.2,76.1
+148,Python Programming,58.7,64.6
+148,Data Structures,61.8,66.1
+148,Statistics,53.0,75.8
+149,Linear Algebra,78.6,90.1
+149,Calculus,83.3,77.4
+149,Python Programming,80.6,87.5
+149,Data Structures,77.8,86.6
+149,Statistics,75.1,75.7
+150,Linear Algebra,65.3,77.2
+150,Calculus,57.3,63.2
+150,Python Programming,54.2,80.8
+150,Data Structures,,81.6
+150,Statistics,,69.1
+151,Linear Algebra,44.3,79.6
+151,Calculus,54.3,63.2
+151,Python Programming,50.6,75.9
+151,Data Structures,45.9,66.0
+151,Statistics,61.3,66.4
+152,Linear Algebra,93.2,100.0
+152,Calculus,97.8,86.2
+152,Python Programming,94.1,92.0
+152,Data Structures,89.4,98.8
+152,Statistics,90.3,85.3
+153,Linear Algebra,64.0,64.2
+153,Calculus,45.6,72.9
+153,Python Programming,57.7,80.5
+153,Data Structures,,58.4
+153,Statistics,51.4,66.8
+154,Linear Algebra,65.4,85.6
+154,Calculus,63.3,75.6
+154,Python Programming,56.8,65.6
+154,Data Structures,59.5,76.3
+154,Statistics,60.7,86.8
+155,Linear Algebra,79.6,78.1
+155,Calculus,87.8,85.8
+155,Python Programming,86.7,82.8
+155,Data Structures,80.7,96.5
+155,Statistics,88.4,90.5
+156,Linear Algebra,52.4,66.5
+156,Calculus,50.5,74.9
+156,Python Programming,61.1,76.3
+156,Data Structures,70.0,78.9
+156,Statistics,66.5,63.4
+157,Linear Algebra,55.7,75.7
+157,Calculus,62.3,74.8
+157,Python Programming,,81.3
+157,Data Structures,49.8,63.4
+157,Statistics,53.6,82.0
+158,Linear Algebra,46.5,71.0
+158,Calculus,47.5,68.6
+158,Python Programming,60.3,59.5
+158,Data Structures,53.5,76.0
+158,Statistics,42.0,56.9
+159,Linear Algebra,77.8,90.1
+159,Calculus,74.7,86.8
+159,Python Programming,74.4,91.0
+159,Data Structures,66.2,73.1
+159,Statistics,68.8,86.3
+160,Linear Algebra,94.4,100.0
+160,Calculus,87.1,95.4
+160,Python Programming,85.1,87.9
+160,Data Structures,87.4,96.7
+160,Statistics,82.9,89.8
+161,Linear Algebra,75.6,80.7
+161,Calculus,66.5,69.3
+161,Python Programming,79.7,73.9
+161,Data Structures,70.3,89.9
+161,Statistics,71.1,89.0
+162,Linear Algebra,68.8,82.8
+162,Calculus,65.6,69.2
+162,Python Programming,64.3,82.8
+162,Data Structures,67.8,67.4
+162,Statistics,70.1,72.6
+163,Linear Algebra,84.1,
+163,Calculus,82.9,90.2
+163,Python Programming,92.3,94.6
+163,Data Structures,83.4,100.0
+163,Statistics,86.9,100.0
+164,Linear Algebra,73.6,93.2
+164,Calculus,87.2,87.7
+164,Python Programming,81.4,74.3
+164,Data Structures,83.3,92.3
+164,Statistics,79.3,77.7
+165,Linear Algebra,79.4,
+165,Calculus,,72.8
+165,Python Programming,65.6,86.8
+165,Data Structures,81.0,91.1
+165,Statistics,65.3,75.2
+166,Linear Algebra,53.5,64.4
+166,Calculus,49.8,65.4
+166,Python Programming,55.8,73.5
+166,Data Structures,47.9,70.2
+166,Statistics,48.9,63.8
+167,Linear Algebra,79.9,86.1
+167,Calculus,79.0,80.6
+167,Python Programming,93.2,97.3
+167,Data Structures,79.4,84.6
+167,Statistics,82.4,83.9
+168,Linear Algebra,55.1,80.1
+168,Calculus,56.6,71.8
+168,Python Programming,,73.1
+168,Data Structures,58.6,
+168,Statistics,55.3,80.0
+169,Linear Algebra,84.3,84.5
+169,Calculus,73.2,88.6
+169,Python Programming,78.2,85.9
+169,Data Structures,85.0,77.3
+169,Statistics,85.1,97.0
+170,Linear Algebra,73.4,87.9
+170,Calculus,54.8,78.4
+170,Python Programming,60.3,88.5
+170,Data Structures,73.4,85.2
+170,Statistics,56.9,68.7
+171,Linear Algebra,74.0,93.1
+171,Calculus,85.4,79.7
+171,Python Programming,86.8,87.8
+171,Data Structures,74.0,78.8
+171,Statistics,75.5,81.1
+172,Linear Algebra,,95.3
+172,Calculus,87.9,79.5
+172,Python Programming,82.1,90.1
+172,Data Structures,80.2,80.8
+172,Statistics,86.3,83.3
+173,Linear Algebra,57.1,70.8
+173,Calculus,51.5,69.2
+173,Python Programming,47.0,74.4
+173,Data Structures,,73.1
+173,Statistics,43.3,69.4
+174,Linear Algebra,51.0,68.2
+174,Calculus,52.1,74.3
+174,Python Programming,64.2,71.2
+174,Data Structures,49.2,71.4
+174,Statistics,56.0,79.9
+175,Linear Algebra,,70.4
+175,Calculus,69.4,
+175,Python Programming,58.9,80.6
+175,Data Structures,63.6,72.2
+175,Statistics,68.1,83.9
+176,Linear Algebra,64.1,75.2
+176,Calculus,54.5,75.1
+176,Python Programming,,62.3
+176,Data Structures,64.4,75.3
+176,Statistics,55.9,70.6
+177,Linear Algebra,93.6,84.2
+177,Calculus,,100.0
+177,Python Programming,81.1,82.3
+177,Data Structures,80.0,99.2
+177,Statistics,,100.0
+178,Linear Algebra,61.3,85.0
+178,Calculus,67.5,81.5
+178,Python Programming,58.4,81.2
+178,Data Structures,56.7,88.2
+178,Statistics,68.0,75.7
+179,Linear Algebra,85.4,89.0
+179,Calculus,74.8,76.5
+179,Python Programming,76.0,93.3
+179,Data Structures,82.6,94.9
+179,Statistics,77.7,76.1
+180,Linear Algebra,73.1,90.7
+180,Calculus,74.6,73.1
+180,Python Programming,72.2,89.5
+180,Data Structures,74.6,82.0
+180,Statistics,,91.5
+181,Linear Algebra,99.8,85.3
+181,Calculus,85.5,97.0
+181,Python Programming,91.6,100.0
+181,Data Structures,87.8,88.8
+181,Statistics,82.6,100.0
+182,Linear Algebra,59.3,64.4
+182,Calculus,45.4,59.0
+182,Python Programming,52.6,65.5
+182,Data Structures,48.6,75.5
+182,Statistics,54.7,61.7
+183,Linear Algebra,56.9,69.4
+183,Calculus,47.5,74.9
+183,Python Programming,,
+183,Data Structures,61.0,80.3
+183,Statistics,52.3,77.8
+184,Linear Algebra,72.9,89.2
+184,Calculus,86.0,91.9
+184,Python Programming,,90.3
+184,Data Structures,,100.0
+184,Statistics,86.2,96.4
+185,Linear Algebra,57.2,68.8
+185,Calculus,71.6,71.7
+185,Python Programming,63.4,78.8
+185,Data Structures,69.0,85.6
+185,Statistics,70.5,67.5
+186,Linear Algebra,60.6,68.3
+186,Calculus,68.2,86.9
+186,Python Programming,,80.8
+186,Data Structures,76.8,
+186,Statistics,61.0,90.3
+187,Linear Algebra,65.9,94.3
+187,Calculus,76.9,90.1
+187,Python Programming,66.7,75.9
+187,Data Structures,73.0,93.5
+187,Statistics,68.0,95.7
+188,Linear Algebra,79.4,69.7
+188,Calculus,66.7,86.9
+188,Python Programming,75.4,69.1
+188,Data Structures,69.7,76.9
+188,Statistics,73.5,84.3
+189,Linear Algebra,76.3,85.8
+189,Calculus,74.6,83.9
+189,Python Programming,62.5,68.8
+189,Data Structures,65.8,71.9
+189,Statistics,,78.5
+190,Linear Algebra,71.9,89.7
+190,Calculus,75.9,84.6
+190,Python Programming,88.1,98.8
+190,Data Structures,77.7,78.6
+190,Statistics,71.3,85.7
+191,Linear Algebra,78.6,86.1
+191,Calculus,89.0,84.8
+191,Python Programming,96.1,88.1
+191,Data Structures,83.7,88.1
+191,Statistics,96.6,83.4
+192,Linear Algebra,51.4,67.4
+192,Calculus,53.2,76.5
+192,Python Programming,52.2,68.9
+192,Data Structures,49.7,73.4
+192,Statistics,61.0,73.1
+193,Linear Algebra,92.6,91.5
+193,Calculus,94.8,100.0
+193,Python Programming,91.1,86.8
+193,Data Structures,94.2,82.8
+193,Statistics,86.4,93.2
+194,Linear Algebra,60.5,80.3
+194,Calculus,60.3,76.7
+194,Python Programming,62.7,
+194,Data Structures,69.3,77.6
+194,Statistics,,71.7
+195,Linear Algebra,57.8,72.5
+195,Calculus,56.5,69.4
+195,Python Programming,,68.3
+195,Data Structures,55.9,83.1
+195,Statistics,50.4,67.5
+196,Linear Algebra,58.4,72.2
+196,Calculus,55.1,68.0
+196,Python Programming,65.7,76.3
+196,Data Structures,68.4,66.6
+196,Statistics,59.9,83.8
+197,Linear Algebra,55.7,
+197,Calculus,64.3,67.7
+197,Python Programming,66.1,67.9
+197,Data Structures,53.3,65.4
+197,Statistics,58.5,74.0
+198,Linear Algebra,81.0,90.9
+198,Calculus,82.2,84.0
+198,Python Programming,86.8,92.5
+198,Data Structures,72.2,78.8
+198,Statistics,74.1,92.2
+199,Linear Algebra,70.8,83.2
+199,Calculus,81.9,89.4
+199,Python Programming,77.9,77.3
+199,Data Structures,,82.6
+199,Statistics,84.4,97.1
+200,Linear Algebra,87.5,87.8
+200,Calculus,75.4,78.6
+200,Python Programming,79.3,90.8
+200,Data Structures,88.6,96.2
+200,Statistics,76.1,96.5

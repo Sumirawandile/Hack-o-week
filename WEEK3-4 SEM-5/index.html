@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduMetrics Studio - Python, NumPy, Pandas & Data Visualization</title>
+    <meta name="description" content="An end-to-end Data Science & Analytics project built with Python OOP, NumPy Broadcasting, Pandas Cleaning/Merging, Matplotlib, and Seaborn.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="app-header">
+        <div class="brand">
+            <div class="brand-icon">📊</div>
+            <div>
+                <h1 class="brand-title">EduMetrics Studio</h1>
+                <div class="brand-subtitle">Hack-O-Week Week 2-3 Project (Python, NumPy, Pandas, Matplotlib & Seaborn)</div>
+            </div>
+        </div>
+
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="tab-viz">
+                <span>📈</span> Data Visualization
+            </button>
+            <button class="tab-btn" data-tab="tab-pandas">
+                <span>🐼</span> Pandas Pipeline
+            </button>
+            <button class="tab-btn" data-tab="tab-numpy">
+                <span>🔢</span> NumPy Broadcasting
+            </button>
+            <button class="tab-btn" data-tab="tab-python">
+                <span>🐍</span> Python OOP & Viva
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+
+        <!-- Top KPI Metric Cards -->
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Exam Records</div>
+                <div class="kpi-value" id="kpi-total">500</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Unique Students</div>
+                <div class="kpi-value" id="kpi-students">100</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Average Exam Score</div>
+                <div class="kpi-value" id="kpi-score">71.5%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Average Attendance</div>
+                <div class="kpi-value" id="kpi-attendance">74.8%</div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 1: DATA VISUALIZATION (SEABORN & MATPLOTLIB CHARTS)
+             =================================================================== -->
+        <section id="tab-viz" class="tab-content active">
+            <div class="charts-grid">
+                <!-- Chart 1: Seaborn Correlation Heatmap -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <span class="chart-title">Correlation Matrix Heatmap</span>
+                        <span class="tech-badge badge-seaborn">Seaborn sns.heatmap</span>
+                    </div>
+                    <div class="chart-img-wrapper">
+                        <img src="static/charts/correlation_heatmap.png" alt="Correlation Matrix Heatmap">
+                    </div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.75rem;">
+                        Shows positive correlation between Study Hours, Attendance %, and Final Exam Scores.
+                    </p>
+                </div>
+
+                <!-- Chart 2: Seaborn Boxplot Distributions -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <span class="chart-title">Subject Score Distributions</span>
+                        <span class="tech-badge badge-seaborn">Seaborn sns.boxplot</span>
+                    </div>
+                    <div class="chart-img-wrapper">
+                        <img src="static/charts/score_distribution.png" alt="Subject Score Distributions">
+                    </div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.75rem;">
+                        Displays score spreads, median scores, and interquartile ranges across all subjects.
+                    </p>
+                </div>
+
+                <!-- Chart 3: Matplotlib Scatter + Linear Regression -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <span class="chart-title">Attendance vs Exam Score Trend</span>
+                        <span class="tech-badge badge-matplotlib">Matplotlib + sns.regplot</span>
+                    </div>
+                    <div class="chart-img-wrapper">
+                        <img src="static/charts/attendance_vs_grade.png" alt="Attendance vs Score">
+                    </div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.75rem;">
+                        Scatter plot with fitted linear regression line illustrating attendance impact on grades.
+                    </p>
+                </div>
+
+                <!-- Chart 4: Matplotlib Grouped Bar Chart -->
+                <div class="chart-card">
+                    <div class="chart-header">
+                        <span class="chart-title">Department Performance Benchmarks</span>
+                        <span class="tech-badge badge-matplotlib">Matplotlib plt.bar</span>
+                    </div>
+                    <div class="chart-img-wrapper">
+                        <img src="static/charts/subject_groupby.png" alt="Department Benchmarks">
+                    </div>
+                    <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 0.75rem;">
+                        Grouped bar chart comparing average exam scores vs attendance across academic departments.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 2: PANDAS PIPELINE & DATA CLEANING
+             =================================================================== -->
+        <section id="tab-pandas" class="tab-content">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Pandas Data Processing Pipeline (`pd.merge` & `.groupby`)</span>
+                    <span class="tech-badge badge-pandas">Pandas DataFrame</span>
+                </div>
+                
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    The raw dataset contained intentional missing values (<code style="color: var(--primary-rose)">NaN</code>) in study hours, age, and exam scores. 
+                    Pandas was used for median imputation (<code style="color: var(--primary-cyan)">fillna()</code>), inner joining demographics with grades (<code style="color: var(--primary-cyan)">pd.merge()</code>), and multi-column aggregation (<code style="color: var(--primary-cyan)">df.groupby()</code>).
+                </p>
+
+                <div class="code-box">
+                    # 1. Cleaning & Imputation<br>
+                    df['exam_score'] = df['exam_score'].fillna(df['exam_score'].median())<br><br>
+                    # 2. Merging Demographics & Grades DataFrames<br>
+                    merged_df = pd.merge(students_df, grades_df, on='student_id', how='inner')<br><br>
+                    # 3. Multi-Column GroupBy Aggregations<br>
+                    groupby_df = merged_df.groupby(['subject', 'department']).agg(<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;avg_score=('exam_score', 'mean'),<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;avg_attendance=('attendance_pct', 'mean')<br>
+                    ).reset_index()
+                </div>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1rem;">Grouped Summary Metrics (Subject × Department)</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Department</th>
+                                <th>Avg Exam Score</th>
+                                <th>Avg Attendance</th>
+                                <th>Avg Study Hours</th>
+                                <th>Students Count</th>
+                            </tr>
+                        </thead>
+                        <tbody id="groupby-table-body">
+                            <!-- Populated via dashboard.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 3: NUMPY BROADCASTING & MATRIX MATH
+             =================================================================== -->
+        <section id="tab-numpy" class="tab-content">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">NumPy Vectorized Operations & Array Broadcasting</span>
+                    <span class="tech-badge badge-numpy">NumPy Matrix Math</span>
+                </div>
+
+                <p style="font-size: 0.9rem; color: var(--text-muted); line-height: 1.6;">
+                    Instead of using slow Python <code style="color: var(--primary-amber)">for</code> loops, we pivoted student scores into a 2D NumPy array matrix of shape <strong>(100 Students × 5 Subjects)</strong>. 
+                    Using <strong>NumPy Broadcasting</strong>, we computed Z-score normalization for all 500 scores in a single vectorized line!
+                </p>
+
+                <div class="code-box">
+                    # 2D Score Matrix X shape: (100, 5)<br>
+                    means = np.mean(X, axis=0) # 1D array of shape (5,)<br>
+                    stds  = np.std(X, axis=0)  # 1D array of shape (5,)<br><br>
+                    # NumPy Array Broadcasting: (100, 5) - (5,) / (5,)<br>
+                    Z_matrix = (X - means) / stds<br><br>
+                    # Vectorized Matrix Dot Product for Weighted GPA:<br>
+                    weighted_gpas = np.dot(X, weights) # (100, 5) · (5, 1) = (100, 1)
+                </div>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 0.75rem; font-size: 1rem;">Top Student Rankings (NumPy Matrix Dot Product Weighted GPA)</h3>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th>Student ID</th>
+                                <th>Weighted Composite Score</th>
+                                <th>Percentile Rank</th>
+                            </tr>
+                        </thead>
+                        <tbody id="top-table-body">
+                            <!-- Populated via dashboard.js -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 4: PYTHON OOP & VIVA GUIDE
+             =================================================================== -->
+        <section id="tab-python" class="tab-content">
+            <div class="chart-card">
+                <div class="chart-header">
+                    <span class="chart-title">Python Essentials & Professor Viva Defense Script</span>
+                    <span class="tech-badge badge-pandas">Python OOP & Comprehensions</span>
+                </div>
+
+                <div class="code-box" style="color: #6ee7b7;">
+                    # Python OOP Class Definition<br>
+                    class DatasetPipeline:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;def __init__(self, student_path, grades_path):<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.student_path = student_path<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;self.grades_path = grades_path<br><br>
+                    # List & Dict Comprehension<br>
+                    top_performers = [r['name'] for r in records if r['exam_score'] >= 85.0]<br>
+                    pass_rates = {sub: round((len([r for r in records if r['subject']==sub and r['score']>=50]) / len(records))*100, 1) for sub in subjects}
+                </div>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 1rem; font-size: 1.1rem; color: var(--primary-cyan);">
+                    💬 Sample Viva Questions & Model Answers
+                </h3>
+
+                <div style="display: flex; flex-direction: column; gap: 1rem;">
+                    <div style="background: rgba(15, 23, 42, 0.9); padding: 1rem; border-radius: 10px; border-left: 4px solid var(--primary-cyan);">
+                        <p style="font-weight: 600; color: #ffffff; margin-bottom: 0.3rem;">
+                            Q1: How did you use Python Object-Oriented Programming (OOP) in this project?
+                        </p>
+                        <p style="color: #94a3b8; font-size: 0.88rem;">
+                            <strong>A:</strong> We encapsulated our data workflow inside modular classes: <code>DataCleaner</code> (for handling missing values and outlier filtering) and <code>DatasetPipeline</code> (for orchestrating CSV loading, <code>pd.merge</code> joins, and multi-column aggregations).
+                        </p>
+                    </div>
+
+                    <div style="background: rgba(15, 23, 42, 0.9); padding: 1rem; border-radius: 10px; border-left: 4px solid var(--primary-amber);">
+                        <p style="font-weight: 600; color: #ffffff; margin-bottom: 0.3rem;">
+                            Q2: What is NumPy Broadcasting and how did you implement it?
+                        </p>
+                        <p style="color: #94a3b8; font-size: 0.88rem;">
+                            <strong>A:</strong> Broadcasting allows NumPy to perform arithmetic operations on arrays of different shapes without manual loops. We pivoted our scores into a (100 × 5) matrix <code>X</code> and subtracted a 1D mean vector <code>μ</code> of shape (5,). NumPy automatically broadcasted <code>μ</code> down all 100 rows to compute Z-scores: <code>Z = (X - μ) / σ</code> in linear time.
+                        </p>
+                    </div>
+
+                    <div style="background: rgba(15, 23, 42, 0.9); padding: 1rem; border-radius: 10px; border-left: 4px solid var(--primary-purple);">
+                        <p style="font-weight: 600; color: #ffffff; margin-bottom: 0.3rem;">
+                            Q3: What is the difference between Matplotlib and Seaborn in your visualizations?
+                        </p>
+                        <p style="color: #94a3b8; font-size: 0.88rem;">
+                            <strong>A:</strong> Matplotlib serves as our low-level plotting engine for custom grouped bar charts and regression scatter overlays. Seaborn sits on top of Matplotlib to provide high-level statistical visualization tools like correlation heatmaps (<code>sns.heatmap</code>) and interquartile score boxplots (<code>sns.boxplot</code>).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- JavaScript Controller -->
+    <script src="static/dashboard.js"></script>
+</body>
+</html>

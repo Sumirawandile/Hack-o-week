@@ -1,0 +1,101 @@
+student_id,name,department,age,study_hours
+101,Priya Sharma,AI & ML,20,9.5
+102,Priya Nair,Computer Science,,13.4
+103,Aarav Verma,Data Science,20,15.1
+104,Aarav Nair,Data Science,,13.4
+105,Siddharth Kumar,AI & ML,19,20.2
+106,Neha Joshi,AI & ML,21,8.1
+107,Arjun Verma,Computer Science,22,6.9
+108,Sneha Kumar,AI & ML,19,19.6
+109,Meera Verma,Information Tech,19,16.0
+110,Kavya Rao,Data Science,19,5.9
+111,Diya Singh,Computer Science,20,22.3
+112,Rahul Singh,Information Tech,21,8.3
+113,Sneha Gupta,AI & ML,19,17.2
+114,Neha Nair,Data Science,20,14.2
+115,Aditya Nair,Data Science,21,21.9
+116,Ananya Gupta,Computer Science,21,13.0
+117,Rohan Gupta,AI & ML,20,18.1
+118,Rahul Mehta,Data Science,21,7.8
+119,Meera Nair,AI & ML,,13.6
+120,Yash Joshi,AI & ML,20,24.9
+121,Vikram Nair,Information Tech,19,20.1
+122,Priya Patel,Data Science,22,16.9
+123,Rahul Joshi,Information Tech,,10.0
+124,Meera Sharma,Computer Science,,20.0
+125,Arjun Verma,AI & ML,22,8.2
+126,Aarav Singh,Data Science,,23.3
+127,Ishita Nair,Data Science,20,12.5
+128,Neha Nair,Computer Science,,11.5
+129,Aarav Verma,AI & ML,21,9.8
+130,Diya Kumar,Computer Science,19,19.6
+131,Rohan Nair,Data Science,20,18.2
+132,Meera Patel,AI & ML,,22.4
+133,Tanvi Gupta,Data Science,21,13.0
+134,Sneha Mehta,Information Tech,19,10.0
+135,Rohan Rao,Computer Science,,16.1
+136,Yash Gupta,Computer Science,19,19.2
+137,Ananya Gupta,Computer Science,19,22.2
+138,Rohan Nair,Data Science,21,18.4
+139,Kabir Nair,Data Science,,16.5
+140,Diya Mehta,Information Tech,20,6.9
+141,Tanvi Rao,Information Tech,22,14.3
+142,Ananya Verma,Computer Science,22,19.6
+143,Priya Gupta,Data Science,20,15.7
+144,Vikram Joshi,Data Science,21,14.3
+145,Rohan Mehta,Computer Science,19,18.0
+146,Meera Sharma,Computer Science,20,8.3
+147,Pooja Mehta,Data Science,22,23.0
+148,Neha Joshi,Computer Science,22,10.3
+149,Siddharth Singh,Information Tech,,18.2
+150,Pooja Patel,Data Science,21,9.4
+151,Ananya Kumar,Computer Science,21,6.1
+152,Yash Mehta,Data Science,19,24.2
+153,Rohan Patel,Computer Science,,6.4
+154,Diya Joshi,Computer Science,,9.9
+155,Kavya Sharma,Computer Science,22,18.1
+156,Yash Nair,AI & ML,21,9.1
+157,Arjun Gupta,AI & ML,22,7.6
+158,Ishita Mehta,AI & ML,19,5.2
+159,Kavya Kumar,Computer Science,19,15.8
+160,Dev Singh,Data Science,21,22.6
+161,Diya Rao,AI & ML,20,13.8
+162,Meera Singh,Computer Science,,11.0
+163,Priya Patel,AI & ML,19,22.8
+164,Meera Patel,AI & ML,21,17.1
+165,Arjun Gupta,AI & ML,,14.8
+166,Ananya Verma,Information Tech,21,5.9
+167,Arjun Patel,AI & ML,20,19.8
+168,Meera Joshi,Computer Science,19,6.5
+169,Vikram Nair,Computer Science,21,16.7
+170,Vikram Joshi,Data Science,19,11.2
+171,Ananya Rao,Data Science,20,18.3
+172,Sneha Nair,Information Tech,,20.0
+173,Diya Patel,Data Science,22,5.5
+174,Arjun Joshi,Data Science,21,8.2
+175,Priya Joshi,Computer Science,22,9.4
+176,Siddharth Rao,AI & ML,20,9.5
+177,Kabir Joshi,AI & ML,21,22.3
+178,Aditya Rao,Information Tech,,11.6
+179,Aarav Verma,AI & ML,20,16.6
+180,Aditya Sharma,Computer Science,,13.7
+181,Arjun Joshi,Computer Science,22,23.0
+182,Kabir Singh,Computer Science,22,5.0
+183,Meera Gupta,AI & ML,22,6.4
+184,Arjun Kumar,AI & ML,19,19.4
+185,Ishita Nair,AI & ML,22,11.5
+186,Ishita Nair,Data Science,20,13.4
+187,Rahul Patel,AI & ML,22,16.0
+188,Aarav Singh,AI & ML,20,13.6
+189,Yash Kumar,AI & ML,22,13.8
+190,Kabir Nair,Information Tech,20,18.2
+191,Ishita Nair,AI & ML,19,21.4
+192,Diya Singh,Data Science,20,7.9
+193,Ananya Gupta,Information Tech,,22.0
+194,Rohan Mehta,Information Tech,,8.9
+195,Rahul Mehta,Information Tech,20,8.0
+196,Aarav Verma,Information Tech,20,8.5
+197,Dev Mehta,Computer Science,,10.0
+198,Priya Mehta,Data Science,22,18.4
+199,Meera Kumar,AI & ML,22,17.3
+200,Dev Joshi,Information Tech,20,19.9

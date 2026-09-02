@@ -1,0 +1,262 @@
+{
+  "total_records": 500,
+  "unique_students": 100,
+  "subjects_count": 5,
+  "overall_avg_score": 71.56,
+  "overall_avg_attendance": 81.36,
+  "groupby_subject_dept": [
+    {
+      "subject": "Calculus",
+      "department": "AI & ML",
+      "avg_score": 72.61,
+      "median_score": 73.5,
+      "avg_attendance": 82.99,
+      "avg_study_hours": 14.99,
+      "student_count": 30
+    },
+    {
+      "subject": "Calculus",
+      "department": "Computer Science",
+      "avg_score": 69.35,
+      "median_score": 71.2,
+      "avg_attendance": 79.85,
+      "avg_study_hours": 13.78,
+      "student_count": 27
+    },
+    {
+      "subject": "Calculus",
+      "department": "Data Science",
+      "avg_score": 71.18,
+      "median_score": 72.2,
+      "avg_attendance": 81.2,
+      "avg_study_hours": 14.97,
+      "student_count": 26
+    },
+    {
+      "subject": "Calculus",
+      "department": "Information Tech",
+      "avg_score": 69.66,
+      "median_score": 67.5,
+      "avg_attendance": 78.64,
+      "avg_study_hours": 13.34,
+      "student_count": 17
+    },
+    {
+      "subject": "Data Structures",
+      "department": "AI & ML",
+      "avg_score": 73.08,
+      "median_score": 72.4,
+      "avg_attendance": 84.85,
+      "avg_study_hours": 14.99,
+      "student_count": 30
+    },
+    {
+      "subject": "Data Structures",
+      "department": "Computer Science",
+      "avg_score": 71.95,
+      "median_score": 72.4,
+      "avg_attendance": 78.91,
+      "avg_study_hours": 13.78,
+      "student_count": 27
+    },
+    {
+      "subject": "Data Structures",
+      "department": "Data Science",
+      "avg_score": 73.34,
+      "median_score": 73.5,
+      "avg_attendance": 83.22,
+      "avg_study_hours": 14.97,
+      "student_count": 26
+    },
+    {
+      "subject": "Data Structures",
+      "department": "Information Tech",
+      "avg_score": 69.36,
+      "median_score": 69.3,
+      "avg_attendance": 80.86,
+      "avg_study_hours": 13.34,
+      "student_count": 17
+    },
+    {
+      "subject": "Linear Algebra",
+      "department": "AI & ML",
+      "avg_score": 71.39,
+      "median_score": 73.3,
+      "avg_attendance": 81.17,
+      "avg_study_hours": 14.99,
+      "student_count": 30
+    },
+    {
+      "subject": "Linear Algebra",
+      "department": "Computer Science",
+      "avg_score": 70.96,
+      "median_score": 72.2,
+      "avg_attendance": 81.01,
+      "avg_study_hours": 13.78,
+      "student_count": 27
+    },
+    {
+      "subject": "Linear Algebra",
+      "department": "Data Science",
+      "avg_score": 74.31,
+      "median_score": 74.0,
+      "avg_attendance": 81.08,
+      "avg_study_hours": 14.97,
+      "student_count": 26
+    },
+    {
+      "subject": "Linear Algebra",
+      "department": "Information Tech",
+      "avg_score": 68.66,
+      "median_score": 68.1,
+      "avg_attendance": 81.92,
+      "avg_study_hours": 13.34,
+      "student_count": 17
+    },
+    {
+      "subject": "Python Programming",
+      "department": "AI & ML",
+      "avg_score": 74.67,
+      "median_score": 75.1,
+      "avg_attendance": 80.45,
+      "avg_study_hours": 14.99,
+      "student_count": 30
+    },
+    {
+      "subject": "Python Programming",
+      "department": "Computer Science",
+      "avg_score": 70.14,
+      "median_score": 72.4,
+      "avg_attendance": 81.39,
+      "avg_study_hours": 13.78,
+      "student_count": 27
+    },
+    {
+      "subject": "Python Programming",
+      "department": "Data Science",
+      "avg_score": 74.09,
+      "median_score": 74.05,
+      "avg_attendance": 83.26,
+      "avg_study_hours": 14.97,
+      "student_count": 26
+    },
+    {
+      "subject": "Python Programming",
+      "department": "Information Tech",
+      "avg_score": 71.25,
+      "median_score": 70.2,
+      "avg_attendance": 80.04,
+      "avg_study_hours": 13.34,
+      "student_count": 17
+    },
+    {
+      "subject": "Statistics",
+      "department": "AI & ML",
+      "avg_score": 72.67,
+      "median_score": 72.4,
+      "avg_attendance": 80.88,
+      "avg_study_hours": 14.99,
+      "student_count": 30
+    },
+    {
+      "subject": "Statistics",
+      "department": "Computer Science",
+      "avg_score": 70.46,
+      "median_score": 70.1,
+      "avg_attendance": 81.55,
+      "avg_study_hours": 13.78,
+      "student_count": 27
+    },
+    {
+      "subject": "Statistics",
+      "department": "Data Science",
+      "avg_score": 70.22,
+      "median_score": 72.35,
+      "avg_attendance": 82.01,
+      "avg_study_hours": 14.97,
+      "student_count": 26
+    },
+    {
+      "subject": "Statistics",
+      "department": "Information Tech",
+      "avg_score": 66.98,
+      "median_score": 68.0,
+      "avg_attendance": 79.56,
+      "avg_study_hours": 13.34,
+      "student_count": 17
+    }
+  ],
+  "top_students": [
+    {
+      "student_id": 120,
+      "weighted_score": 96.8,
+      "percentile_rank": 100.0
+    },
+    {
+      "student_id": 152,
+      "weighted_score": 92.96,
+      "percentile_rank": 99.0
+    },
+    {
+      "student_id": 193,
+      "weighted_score": 91.82,
+      "percentile_rank": 98.0
+    },
+    {
+      "student_id": 115,
+      "weighted_score": 89.46,
+      "percentile_rank": 97.0
+    },
+    {
+      "student_id": 181,
+      "weighted_score": 89.46,
+      "percentile_rank": 96.0
+    },
+    {
+      "student_id": 132,
+      "weighted_score": 89.28,
+      "percentile_rank": 95.0
+    },
+    {
+      "student_id": 111,
+      "weighted_score": 88.88,
+      "percentile_rank": 94.0
+    },
+    {
+      "student_id": 191,
+      "weighted_score": 88.8,
+      "percentile_rank": 93.0
+    },
+    {
+      "student_id": 126,
+      "weighted_score": 88.22,
+      "percentile_rank": 92.0
+    },
+    {
+      "student_id": 160,
+      "weighted_score": 87.38,
+      "percentile_rank": 91.0
+    }
+  ],
+  "subject_means": {
+    "Calculus": 70.86,
+    "Data Structures": 72.21,
+    "Linear Algebra": 71.57,
+    "Python Programming": 72.72,
+    "Statistics": 70.47
+  },
+  "subject_stds": {
+    "Calculus": 13.28,
+    "Data Structures": 11.73,
+    "Linear Algebra": 12.84,
+    "Python Programming": 13.18,
+    "Statistics": 12.64
+  },
+  "pass_rates": {
+    "Statistics": 97.0,
+    "Calculus": 93.0,
+    "Python Programming": 98.0,
+    "Linear Algebra": 96.0,
+    "Data Structures": 93.0
+  }
+}
