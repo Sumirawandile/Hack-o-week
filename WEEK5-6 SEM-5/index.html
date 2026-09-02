@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroMath Studio - Linear Algebra & Calculus for Backpropagation</title>
+    <meta name="description" content="An interactive visual mathematics engine built from first principles for Linear Algebra, Multivariable Calculus, Gradient Descent, and Neural Network Backpropagation.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation Bar -->
+    <header class="app-header">
+        <div class="brand-container">
+            <div class="brand-logo">⚡</div>
+            <div>
+                <h1 class="brand-title">NeuroMath Studio</h1>
+                <div class="brand-subtitle">Hack-O-Week Week 5-6 Project (3rd Year Engineering Evaluation)</div>
+            </div>
+        </div>
+
+        <nav class="nav-tabs">
+            <button class="tab-btn active" data-tab="tab-vector">
+                <span>📐</span> Linear Algebra & Eigen
+            </button>
+            <button class="tab-btn" data-tab="tab-gradient">
+                <span>⛰️</span> Calculus & Gradients
+            </button>
+            <button class="tab-btn" data-tab="tab-backprop">
+                <span>🧠</span> Neural Chain Rule
+            </button>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="app-container">
+
+        <!-- ===================================================================
+             TAB 1: LINEAR ALGEBRA & EIGENVALUES MODULE
+             =================================================================== -->
+        <section id="tab-vector" class="tab-content active">
+            <div class="module-layout">
+                <!-- Visual Canvas Column -->
+                <div class="glass-card">
+                    <div class="card-title">
+                        <span>Interactive Vector & Transformation Space</span>
+                        <span style="font-size: 0.8rem; color: var(--text-dim);">Drag vector heads (u, v) on canvas</span>
+                    </div>
+                    <div class="canvas-container">
+                        <canvas id="vector-canvas"></canvas>
+                    </div>
+
+                    <!-- Live Metrics Display -->
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-title">Dot Product (u · v)</div>
+                            <div class="stat-val" id="stat-dot">0.00</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Angle Between (θ)</div>
+                            <div class="stat-val" id="stat-angle">0.0°</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Determinant det(A)</div>
+                            <div class="stat-val" id="stat-det">1.00</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Eigenvalues (λ₁, λ₂)</div>
+                            <div class="stat-val" id="stat-eigen">λ₁ = 1.0, λ₂ = 1.0</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls Sidebar Column -->
+                <div class="glass-card">
+                    <div class="card-title">Transformation Controls</div>
+
+                    <div class="control-group">
+                        <label class="control-label">Visualization Mode</label>
+                        <select id="vector-mode-select">
+                            <option value="matrix">Matrix Transformation & Eigenlines</option>
+                            <option value="dot">Dot Product & Projection Workbench</option>
+                        </select>
+                    </div>
+
+                    <!-- 2x2 Matrix Controls -->
+                    <div class="control-group">
+                        <label class="control-label">Transformation Matrix A = [[a, b], [c, d]]</label>
+                        <div class="matrix-grid-input">
+                            <input type="number" id="mat-a" value="1.5" step="0.1">
+                            <input type="number" id="mat-b" value="0.5" step="0.1">
+                            <input type="number" id="mat-c" value="0.5" step="0.1">
+                            <input type="number" id="mat-d" value="1.2" step="0.1">
+                        </div>
+                    </div>
+
+                    <!-- Matrix Presets -->
+                    <div class="control-group">
+                        <label class="control-label">Preset Transformations</label>
+                        <select id="matrix-preset-select">
+                            <option value="custom">-- Custom Matrix --</option>
+                            <option value="identity">Identity Matrix (No change)</option>
+                            <option value="scale">Uniform Scaling (2x)</option>
+                            <option value="rot45">Rotation (45°)</option>
+                            <option value="shearX">Shear X-Axis</option>
+                            <option value="shearY">Shear Y-Axis</option>
+                            <option value="singular">Singular Matrix (det = 0, line collapse)</option>
+                            <option value="reflection">Reflection across X-Axis</option>
+                        </select>
+                    </div>
+
+                    <!-- Toggles -->
+                    <div class="control-group">
+                        <label class="control-label">Overlays</label>
+                        <div style="display: flex; flex-direction: column; gap: 0.5rem; font-size: 0.85rem;">
+                            <label><input type="checkbox" id="chk-grid" checked> Transformed Grid & Determinant Area</label>
+                            <label><input type="checkbox" id="chk-eigen" checked> Eigenvector Invariant Rays (A·v = λ·v)</label>
+                            <label><input type="checkbox" id="chk-proj" checked> Vector Projection shadow</label>
+                        </div>
+                    </div>
+
+                    <div class="stat-box" style="margin-top: 1rem;">
+                        <div class="stat-title">Current Vector Coordinates</div>
+                        <div class="stat-val" id="stat-coords" style="font-size: 0.82rem;">u=(3.0, 2.0) | A·u=(5.5, 3.9)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 2: CALCULUS & GRADIENT DESCENT MODULE
+             =================================================================== -->
+        <section id="tab-gradient" class="tab-content">
+            <div class="module-layout">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <span>Multivariable Calculus & Loss Surface Optimization</span>
+                        <span style="font-size: 0.8rem; color: var(--text-dim);">Click anywhere to place optimizer start point</span>
+                    </div>
+                    <div class="canvas-container">
+                        <canvas id="gradient-canvas"></canvas>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-box">
+                            <div class="stat-title">Optimization Step</div>
+                            <div class="stat-val" id="grad-step">0</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Current Position (x, y)</div>
+                            <div class="stat-val" id="grad-pos">(2.500, 2.500)</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Loss Value f(x, y)</div>
+                            <div class="stat-val" id="grad-loss">3.1250</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-title">Gradient Magnitude ||∇f||</div>
+                            <div class="stat-val" id="grad-mag">3.5355</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls Sidebar -->
+                <div class="glass-card">
+                    <div class="card-title">Gradient Descent Parameters</div>
+
+                    <div class="control-group">
+                        <label class="control-label">Select Loss Surface</label>
+                        <select id="surface-select">
+                            <option value="bowl">Quadratic Bowl: f(x,y) = 0.5(x² + y²)</option>
+                            <option value="saddle">Saddle Point: f(x,y) = 0.5(x² - y²)</option>
+                            <option value="multiPeak">Multi-Local Minima: sin(2x)cos(2y)</option>
+                            <option value="rosenbrock">Rosenbrock Valley: (1-x)² + 10(y-x²)²</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <span>Learning Rate (η)</span>
+                            <span class="value" id="val-lr">0.10</span>
+                        </div>
+                        <input type="range" id="slider-lr" min="0.01" max="0.8" step="0.01" value="0.10">
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <span>Momentum (γ)</span>
+                            <span class="value" id="val-mom">0.50</span>
+                        </div>
+                        <input type="range" id="slider-mom" min="0.0" max="0.9" step="0.05" value="0.50">
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-primary" id="btn-grad-start">▶ Run Descent</button>
+                        <button class="btn btn-secondary" id="btn-grad-step">Step 1x</button>
+                        <button class="btn btn-secondary" id="btn-grad-reset">Reset</button>
+                    </div>
+
+                    <div class="formula-card" style="margin-top: 1.5rem;">
+                        <span class="step-title">Multivariable Calculus Formula:</span>
+                        <code>∇f(x, y) = [ ∂f/∂x, ∂f/∂y ]ᵀ</code><br/>
+                        <code>vₖ = γ vₖ₋₁ + η ∇f(pₖ)</code><br/>
+                        <code>pₖ₊₁ = pₖ - vₖ</code>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===================================================================
+             TAB 3: NEURAL CHAIN RULE & BACKPROPAGATION MODULE
+             =================================================================== -->
+        <section id="tab-backprop" class="tab-content">
+            <div class="module-layout">
+                <div class="glass-card">
+                    <div class="card-title">
+                        <span>Computational Graph & Step-by-Step Backpropagation Debugger</span>
+                        <span style="font-size: 0.8rem; color: var(--text-dim);">Inspect node values & local derivatives</span>
+                    </div>
+
+                    <div class="canvas-container">
+                        <canvas id="backprop-canvas"></canvas>
+                    </div>
+
+                    <div style="margin-top: 1rem;">
+                        <div class="card-title" style="font-size: 0.95rem; margin-bottom: 0.5rem;">Loss Convergence History</div>
+                        <div class="canvas-container" style="height: 160px;">
+                            <canvas id="loss-chart-canvas"></canvas>
+                        </div>
+                    </div>
+
+                    <div id="chain-formula-breakdown">
+                        <!-- Dynamic Chain Rule Breakdown filled by JS -->
+                    </div>
+                </div>
+
+                <!-- Control Panel -->
+                <div class="glass-card">
+                    <div class="card-title">Network & Hyperparameters</div>
+
+                    <div class="control-group">
+                        <label class="control-label">Activation Function σ(z)</label>
+                        <select id="backprop-act-select">
+                            <option value="sigmoid">Sigmoid σ(z) = 1 / (1 + e⁻ᶻ)</option>
+                            <option value="tanh">Tanh tanh(z)</option>
+                            <option value="relu">ReLU max(0, z)</option>
+                            <option value="linear">Linear (Identity)</option>
+                        </select>
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <span>Input x₁</span>
+                            <span class="value" id="val-x1">1.00</span>
+                        </div>
+                        <input type="range" id="slider-x1" min="-3" max="3" step="0.1" value="1.0">
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <span>Input x₂</span>
+                            <span class="value" id="val-x2">-0.50</span>
+                        </div>
+                        <input type="range" id="slider-x2" min="-3" max="3" step="0.1" value="-0.5">
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <span>Target Output (y)</span>
+                            <span class="value" id="val-target">1.00</span>
+                        </div>
+                        <input type="range" id="slider-target" min="0" max="1" step="0.05" value="1.0">
+                    </div>
+
+                    <div class="control-group">
+                        <div class="control-label">
+                            <span>Learning Rate (η)</span>
+                            <span class="value" id="val-backprop-lr">0.50</span>
+                        </div>
+                        <input type="range" id="slider-backprop-lr" min="0.05" max="2.0" step="0.05" value="0.50">
+                    </div>
+
+                    <div class="btn-group" style="flex-direction: column;">
+                        <button class="btn btn-secondary" id="btn-forward">1. Run Forward Pass</button>
+                        <button class="btn btn-primary" id="btn-backward">2. Run Backward Pass (Chain Rule)</button>
+                        <button class="btn btn-accent" id="btn-update">3. Update Weights (Grad Step)</button>
+                        <button class="btn btn-primary" id="btn-autotrain" style="background: linear-gradient(135deg, #10b981, #059669);">⚡ Auto Train 20 Epochs</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+        NeuroMath Studio &copy; 2026 | Built from First Principles for SIT Hack-O-Week Evaluation (Linear Algebra & Calculus)
+    </footer>
+
+    <!-- JavaScript Engines -->
+    <script src="js/math_engine.js"></script>
+    <script src="js/vector_module.js"></script>
+    <script src="js/gradient_module.js"></script>
+    <script src="js/backprop_module.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
